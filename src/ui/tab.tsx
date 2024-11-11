@@ -6,7 +6,7 @@ export const Tab: React.FC<
     React.PropsWithChildren<{
         active: boolean;
         value: string;
-        onClick: (value: string) => void;
+        onClick?: (value: string) => void;
     }>
 > = ({ active, value, children, onClick: handleClick }) => {
     const className = clsx(
